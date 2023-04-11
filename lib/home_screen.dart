@@ -51,6 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ].request();
                 if (statuses[Permission.storage]!.isGranted &&
                     statuses[Permission.camera]!.isGranted) {
+                  print('aaa');
                   showImagePicker(context);
                 } else {
                   print('no permission provided');
